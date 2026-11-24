@@ -28,7 +28,7 @@ jobs:
             sudo docker build -t shoplite-inventory:1.0 ./inventory-service
             sudo docker build -t shoplite-orders:1.0 ./order-service
 
-            sudo docker build --build-arg SERVER_NAME=32.236.187.217 -t shoplite-frontend:1.0 ./frontend
+            sudo docker build --build-arg SERVER_NAME=shopten.duckdns.org -t shoplite-frontend:1.0 ./frontend
 
             sudo docker rm -f shoplite-catalog shoplite-inventory shoplite-orders shoplite-frontend || true
 

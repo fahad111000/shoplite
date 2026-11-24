@@ -71,7 +71,7 @@ function OrderForm({ products, onOrdered }) {
 
   return (
     <section>
-      <h2>Place an order</h2>
+      <h2>Place an order order</h2>
       <form onSubmit={submit}>
         <select value={productId} onChange={(e) => setProductId(e.target.value)}>
           {products.map((p) => (

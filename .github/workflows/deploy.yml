@@ -1,0 +1,22 @@
+name: ShopLite CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+
+
+jobs:
+  test:
+    runs-on:ubuntu-latest
+
+
+  steps:
+    - name: Get Code
+      uses: actions/checkout@v4
+
+
+
+    - name: Check Project
+      run : echo "ShopLite GitHub Actions is working!"
